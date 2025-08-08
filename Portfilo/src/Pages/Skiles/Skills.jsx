@@ -38,7 +38,7 @@
     return (
       <section
         id="skills"
-        className="py-20 px-6  dark:bg-[#2c2c2c] transition-colors duration-500"
+        className="py-20 px-6   bg-white dark:bg-gray-950 transition-colors duration-500"
       >
         <div className="max-w-6xl mx-auto">
       <h2

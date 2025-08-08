@@ -106,65 +106,101 @@ export default function Contact() {
         </form>
 
         {/* معلومات التواصل */}
-        <div className="     bg-white dark:bg-gray-800 
-        text-gray-700 dark:text-gray-300 
-        border border-gray-200 dark:border-gray-700 
-        p-8 rounded-lg shadow-md text-center 
-        space-y-6 flex flex-col justify-center
-        transition-all duration-300 
-        hover:scale-105 hover:shadow-lg hover:shadow-purple-600
-      ">
-       
-          <h3 className="text-2xl font-semibold text-purple-600 mb-4">Contact Info</h3>
-          <div className="flex items-center gap-3">
-            <FaEnvelope className="text-purple-600 text-3xl mt-1" />
-            <div className="flex flex-col">
-              <span className="font-medium text-gray-800 dark:text-white">Email</span>
-              <a
-                href="mailto:0xmahmoudnagy@gmail.com"
-                className="text-gray-600 dark:text-gray-300 hover:underline"
-              >
-                0xmahmoudnagy@gmail.com
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <FaPhone className="text-purple-600 text-3xl" />
-            <div className="flex flex-col">
-              <span className="font-medium text-gray-800 dark:text-white">Phone</span>
-              <a href="tel:+201227576328" className="hover:underline">+20 122 757 6328</a>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <FaMapMarkerAlt className="text-purple-600 text-3xl" />
-            <div className="flex flex-col">
-              <span className="font-medium text-gray-800 dark:text-white">Location</span>
-              <span className="hover:underline cursor-default">Cairo / Egypt</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-purple-600">
-              <FaLinkedin className="text-purple-600 text-3xl" />
-            </a>
-            <div className="flex flex-col">
-              <span className="font-medium text-gray-800 dark:text-white">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/mahmoud-saleh-74bb43220/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                Mahmoud Saleh
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="https://github.com/MohamedNagy465" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-purple-600">
-              <FaGithub className="text-purple-600 text-3xl" />
-            </a>
-            <div className="flex flex-col">
-              <span className="font-medium text-gray-800 dark:text-white">GitHub</span>
-              <a href="https://github.com/MohamedNagy465" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                @MohamedNagy465
-              </a>
-            </div>
-          </div>
-        </div>
+          <div
+  className="
+    bg-white dark:bg-gray-800
+    text-gray-700 dark:text-gray-300
+    border border-gray-200 dark:border-gray-700
+    p-8 rounded-lg shadow-md
+    transition-all duration-300
+    hover:scale-105 hover:shadow-lg hover:shadow-purple-600
+    space-y-6
+  "
+>
+  <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center md:text-left">
+    Contact Info
+  </h3>
+
+  {/* flex-col-reverse على الموبايل عشان الأيقونة فوق الكلام */}
+  {/* items-center للموبايل عشان التمركز */}
+  {/* md:flex-row للديسكتوب مع text-left */}
+  <div className="flex flex-col-reverse items-center md:flex-row md:items-center md:justify-between gap-4">
+    <div className="flex flex-col text-center md:text-left">
+      <span className="font-medium text-gray-800 dark:text-white">Email</span>
+      <a
+        href="mailto:0xmahmoudnagy@gmail.com"
+        className="text-gray-600 dark:text-gray-300 hover:underline"
+      >
+        0xmahmoudnagy@gmail.com
+      </a>
+    </div>
+    <FaEnvelope className="text-purple-600 text-3xl" />
+  </div>
+
+  <div className="flex flex-col-reverse items-center md:flex-row md:items-center md:justify-between gap-4">
+    <div className="flex flex-col text-center md:text-left">
+      <span className="font-medium text-gray-800 dark:text-white">Phone</span>
+      <a href="tel:+201227576328" className="hover:underline">
+        +20 122 757 6328
+      </a>
+    </div>
+    <FaPhone className="text-purple-600 text-3xl" />
+  </div>
+
+  <div className="flex flex-col-reverse items-center md:flex-row md:items-center md:justify-between gap-4">
+    <div className="flex flex-col text-center md:text-left">
+      <span className="font-medium text-gray-800 dark:text-white">Location</span>
+      <span className="cursor-default">Cairo / Egypt</span>
+    </div>
+    <FaMapMarkerAlt className="text-purple-600 text-3xl" />
+  </div>
+
+  <div className="flex flex-col-reverse items-center md:flex-row md:items-center md:justify-between gap-4">
+    <div className="flex flex-col text-center md:text-left">
+      <span className="font-medium text-gray-800 dark:text-white">LinkedIn</span>
+      <a
+        href="https://www.linkedin.com/in/mahmoud-saleh-74bb43220/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        Mahmoud Saleh
+      </a>
+    </div>
+    <a
+      href="https://www.linkedin.com/in/mahmoud-saleh-74bb43220/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-purple-600"
+    >
+      <FaLinkedin className="text-purple-600 text-3xl" />
+    </a>
+  </div>
+
+  <div className="flex flex-col-reverse items-center md:flex-row md:items-center md:justify-between gap-4">
+    <div className="flex flex-col text-center md:text-left">
+      <span className="font-medium text-gray-800 dark:text-white">GitHub</span>
+      <a
+        href="https://github.com/MohamedNagy465"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        @MohamedNagy465
+      </a>
+    </div>
+    <a
+      href="https://github.com/MohamedNagy465"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-purple-600"
+    >
+      <FaGithub className="text-purple-600 text-3xl" />
+    </a>
+  </div>
+</div>
+
+        
       </div>
     </section>
   );
