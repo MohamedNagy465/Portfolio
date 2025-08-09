@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarkerAlt ,FaCheckCircle} from 'react-icons/fa';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -20,7 +21,24 @@ export default function Contact() {
       'jIKrAqJVAWaXoZotY'    
     )
     .then(() => {
-      toast.success(`Thank you, ${formData.name}! Your message has been sent.`);
+      toast.success(`Thank you, ${formData.name}! Your message has been sent.`,
+      {
+  icon: (
+    <FaCheckCircle
+      style={{
+        color: "#eee", // بنفسجي فاتح للأيقونة
+        filter: "drop-shadow(0 0 4px #E1C4FF)", // لمعة خفيفة
+      }}
+    />
+  ),
+  style: {
+    background: "#6A0DAD", // بنفسجي غامق للخلفية
+    color: "#fff",
+  },
+}
+
+      );
+      
       setFormData({ name: '', email: '', message: '' });
     })
     .catch(() => {
@@ -31,7 +49,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-white dark:bg-gray-950 px-6 py-20"
+      className=" bg-white dark:bg-gray-950 px-6 py-20"
     >
       <Toaster position="top-center" reverseOrder={false} />
 

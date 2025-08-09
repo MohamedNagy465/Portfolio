@@ -22,23 +22,23 @@
       AOS.init({ duration: 1000 });
     }, []);
     const skills = [
-      { name: 'HTML', level: 90, icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
-      { name: 'CSS', level: 85, icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
-      { name: 'JavaScript', level: 80, icon: <FaJs className="text-yellow-400 text-4xl" /> },
-      { name: 'React.js', level: 75, icon: <FaReact className="text-cyan-400 text-4xl" /> },
-      { name: 'Tailwind CSS', level: 80, icon: <SiTailwindcss className="text-sky-400 text-4xl" /> },
-      { name: 'TypeScript', level: 70, icon: <FaCode className="text-indigo-400 text-4xl" /> },
-      { name: 'Redux', level: 70, icon: <SiRedux className="text-purple-600 text-4xl" /> },
-      { name: 'Next.js', level: 65, icon: <SiNextdotjs className="text-black dark:text-white text-4xl" /> },
-      { name: 'Bootstrap', level: 75, icon: <SiBootstrap className="text-purple-500 text-4xl" /> },
-      { name: 'Git', level: 85, icon: <FaGitAlt className="text-orange-600 text-4xl" /> },
-      { name: 'GitHub', level: 80, icon: <FaGithub className="text-gray-800 dark:text-white text-4xl" /> },
-      { name: 'Responsive Design', level: 90, icon: <MdDevices className="text-green-500 text-4xl" /> },
+      { name: 'HTML',   icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
+      { name: 'CSS',   icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
+      { name: 'JavaScript',   icon: <FaJs className="text-yellow-400 text-4xl" /> },
+      { name: 'React.js',   icon: <FaReact className="text-cyan-400 text-4xl" /> },
+      { name: 'Tailwind CSS',   icon: <SiTailwindcss className="text-sky-400 text-4xl" /> },
+      { name: 'TypeScript',   icon: <FaCode className="text-indigo-400 text-4xl" /> },
+      { name: 'Redux',   icon: <SiRedux className="text-purple-600 text-4xl" /> },
+      { name: 'Next.js',   icon: <SiNextdotjs className="text-black dark:text-white text-4xl" /> },
+      { name: 'Bootstrap',   icon: <SiBootstrap className="text-purple-500 text-4xl" /> },
+      { name: 'Git',   icon: <FaGitAlt className="text-orange-600 text-4xl" /> },
+      { name: 'GitHub',   icon: <FaGithub className="text-gray-800 dark:text-white text-4xl" /> },
+      { name: 'Responsive Design',   icon: <MdDevices className="text-green-500 text-4xl" /> },
     ];
     return (
       <section
-        id="skills"
-        className="py-20 px-6   bg-white dark:bg-gray-950 transition-colors duration-500"
+        id="skills" 
+        className="py-20 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
       >
         <div className="max-w-6xl mx-auto">
       <h2
@@ -73,7 +73,7 @@
                   <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">
                     {skill.name}
                   </h3>
-                  <div className="w-full">
+                  {/* <div className="w-full">
                     <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded">
                       <div
                         className="h-2 rounded bg-purple-500"
@@ -83,7 +83,7 @@
                     <p className="text-sm mt-2 text-gray-600 dark:text-gray-400 text-center">
                       {skill.level}%
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
