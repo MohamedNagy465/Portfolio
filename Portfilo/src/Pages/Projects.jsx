@@ -13,17 +13,19 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { SiReactquery, SiAxios, SiTailwindcss } from "react-icons/si";
+import { MdAnimation } from "react-icons/md"; // أيقونة بسيطة تمثل Aos
 
 const techIcons = {
-  React: <FaReact className="inline-block mr-1" />,
-  "React Query": <SiReactquery className="inline-block mr-1" />,
-  TailwindCSS: <SiTailwindcss className="inline-block mr-1" />,
-  Bootstrap: <FaBootstrap className="inline-block mr-1" />,
-  Axios: <SiAxios className="inline-block mr-1" />,
-  HTML: <FaHtml5 className="inline-block mr-1" />,
-  CSS: <FaCss3Alt className="inline-block mr-1" />,
-  JavaScript: <FaJs className="inline-block mr-1" />,
-  GitHub: <FaGithub className="inline-block mr-1" />,
+  React: <FaReact className="inline-block" />,
+  RQuery: <SiReactquery className="inline-block" />,
+  TailwindCSS: <SiTailwindcss className="inline-block" />,
+  Bootstrap: <FaBootstrap className="inline-block" />,
+  Axios: <SiAxios className="inline-block" />,
+  HTML: <FaHtml5 className="inline-block" />,
+  CSS: <FaCss3Alt className="inline-block" />,
+  JavaScript: <FaJs className="inline-block" />,
+  GitHub: <FaGithub className="inline-block" />,
+  Aos: <MdAnimation className="inline-block" />, // إضافتها هنا
 };
 
 const projects = [
@@ -32,7 +34,7 @@ const projects = [
     image: fressh,
     description:
       "E-commerce app for fresh products with cart & user authentication.",
-    tech: ["React", "ReactQuery", "TailwindCSS", "Axios"],
+    tech: ["React", "RQuery", "TailwindCSS", "Axios"],
     live: "https://fresh-cart-flax-pi.vercel.app/",
     code: "https://github.com/Darthdevv/Fresh-Cart",
   },
@@ -46,13 +48,13 @@ const projects = [
     code: "https://github.com/MohamedNagy465/yummy",
   },
   {
-    title: "Daniels",
+    title: "Moves App",
     image: daniels,
     description:
       "A portfolio template with smooth animations and responsive design.",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    live: "https://vercel.com/mahmoud-nagis-projects/daniels/9YREFPYgBSUtjCezfZwr1eCE2jTM",
-    code: "https://github.com/MohamedNagy465/Daniels",
+    tech: ["React", "RQuery", "TailwindCSS", "Aos"],
+    live: "https://moves-app.vercel.app/",
+    code: "https://github.com/MohamedNagy465/movesApp",
   },
 ];
 
@@ -84,7 +86,10 @@ function ProjectCard({ project }) {
               key={i}
               className="bg-purple-100 text-purple-700 dark:bg-purple-800 dark:text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center gap-1"
             >
-              {techIcons[tech]} {tech}
+              {techIcons[tech] && (
+                <span className="text-base">{techIcons[tech]}</span>
+              )}
+              {tech}
             </span>
           ))}
         </div>
@@ -115,7 +120,7 @@ export default function Projects() {
   return (
     <section
       id="portfolio"
-      className=" py-20 px-4 bg-gray-50 dark:bg-gray-900 text-center"
+      className="py-20 px-4 bg-gray-50 dark:bg-gray-900 text-center"
     >
       <div className="container mx-auto" data-aos="fade-up" data-aos-delay="100">
         <h2
