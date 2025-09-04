@@ -1,7 +1,7 @@
 import React from "react";
 import fressh from "../assets/Screenshot 2025-08-07 181331.png";
 import yummy from "../assets/Screenshot 2025-08-07 181952.png";
-import daniels from "../assets/Screenshot 2025-08-07 185701.png";
+import daniels from "../assets/Screenshot 2025-09-04 114654.png";
 
 // أيقونات
 import {
