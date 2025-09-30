@@ -78,7 +78,7 @@ export default function Home() {
     <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
   {/* زر تحميل السيرة الذاتية */}
   <a
-    href="/MAHMOUD-NAGY-CV.pdf"
+    href="/MAHMOUD-NAGY-.pdf"
     download
     className="bg-indigo-600 text-white font-semibold px-6 py-2 rounded-md shadow-md hover:bg-indigo-700 transition"
     data-aos="fade-up"
