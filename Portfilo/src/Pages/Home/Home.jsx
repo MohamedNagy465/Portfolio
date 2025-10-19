@@ -55,7 +55,6 @@ export default function Home() {
       >
         Passionate Front-End Developer from Egypt
       </span>
-
       <p
         className="text-gray-600 dark:text-gray-300 text-base"
         data-aos="fade-up"
@@ -64,7 +63,6 @@ export default function Home() {
       >
         🎯 Focused on UI/UX, Performance, and Responsive Design
       </p>
-
       <p
         className="text-gray-600 dark:text-gray-300 text-base"
         data-aos="fade-up"
